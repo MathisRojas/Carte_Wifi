@@ -1,0 +1,26 @@
+Initiation d'un nouveau projet sous MPLABX
+
+Sur la page principale de MPLABX, cliquer sur File/New Project
+
+1. Choose Project
+-> Categories: Microchip Embedded
+-> Projects: Standalone Project
+
+2. Select Device
+-> Family: Advanced 8 bits MCU
+-> Device: PIC18F26K22
+-> Tool: Pickit3 (show all coché)
+
+5. Select Compiler
+-> XC8 (v2.41)
+
+6. Select Project Name and Folder
+-> à adapter en fonction des besoins
+-> Encoding: ISO-8859-1
+
+----------------------------------------------------------------------
+Si le projet nécessite du code assembleur (directive #asm et #endasm) dans les sources .c,
+il est nécessaire de passer le compilateur en standard C90:
+Sur la page principale de MPLABX, cliquer sur Production/Set Project Configuration/Customize
+-> XC8 Global: passer en standard C90
+

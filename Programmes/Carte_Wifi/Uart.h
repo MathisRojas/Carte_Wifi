@@ -1,0 +1,127 @@
+
+// Communication UART
+// Bibliothèque de base
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <xc.h>                 //Fichier include générique pour tous les Pics
+
+void UART_Init(unsigned long baud_rate, unsigned char Fclk) {
+    unsigned int spbrg_value = (Fclk / (64 * baud_rate)) - 1; // Mode normal
+    SPBRG = spbrg_value;  // Configure la vitesse en bauds
+    TXSTAbits.SYNC = 0;   // Mode asynchrone
+    RCSTAbits.SPEN = 1;   // Active le module série
+    TXSTAbits.TXEN = 1;   // Active l'émetteur
+    RCSTAbits.CREN = 1;   // Active le récepteur
+    
+  TRISCbits.RC7=1;                 //RC7=RX en entrée
+  TRISCbits.RC6=1;                 //RC6=TX en entrée (controlée par le PIC)
+  ANSELCbits.ANSC7=0;              //désactivation du mode analogique de RC7
+  ANSELCbits.ANSC6=0;              //désactivation du mode analogique de RC6
+   
+  PIE1bits.TXIE=0;                 //Désactive les interruptions en transmission
+  PIE1bits.RCIE=0;                 //Désactive les interruptions en réception
+  BAUDCONbits.BRG16=1;
+  
+}
+//-----------------------------------------------------------------------------------------------------------------
+//Initialisation du module UART n°1
+void InitUart9600(unsigned char Fclk)
+{
+  TRISCbits.RC7=1;                 //RC7=RX en entrée
+  TRISCbits.RC6=1;                 //RC6=TX en entrée (controlée par le PIC)
+  ANSELCbits.ANSC7=0;              //désactivation du mode analogique de RC7
+  ANSELCbits.ANSC6=0;              //désactivation du mode analogique de RC6
+   
+  PIE1bits.TX1IE=0;                 //Désactive les interruptions en transmission
+  PIE1bits.RC1IE=1;                 //Désactive les interruptions en réception
+  BAUDCONbits.BRG16=1;
+  
+  switch (Fclk)
+  {
+    case  1: SPBRG1=25; SPBRGH1=0; break;
+    case  2: SPBRG1=51; SPBRGH1=0; break;
+    case  4: SPBRG1=103; SPBRGH1=0; break;
+    case  8: SPBRG1=207; SPBRGH1=0; break;
+    case 16: SPBRG1=160; SPBRGH1=1; break;
+    case 32: SPBRG1=64; SPBRGH1=3; break;
+    case 64: SPBRG1=130; SPBRGH1=6; break;
+    default: SPBRG1=207; SPBRGH1=0; break;
+  }
+
+  TXSTA1=0b00100100;               //TX9=0 émission sur 8 bits, TXEN=1 validation de l'émetteur
+                                   //SYNC=0 mode asynchrone, SENDB=0 pas d'émission de break, BRGH=1 
+  RCSTA1=0b10010000;               //SPEN=1 validation de l'UART, RX9=0 réception sur 8 bits
+                                   //CREN=1 validation du récepteur ADDEN=0 dévalidation de la détection d'adresses
+
+}
+
+
+//Initialisation du module UART n°1
+void InitUart38400(unsigned char Fclk)
+{
+  TRISCbits.RC7=1;                 //RC7=RX en entrée
+  TRISCbits.RC6=1;                 //RC6=TX en sortie (controlée par le PIC)
+  ANSELCbits.ANSC7=0;              //désactivation du mode analogique de RC7
+  ANSELCbits.ANSC6=0;              //désactivation du mode analogique de RC6
+   
+  PIE1bits.TX1IE=0;                 //Désactive les interruptions en transmission
+  PIE1bits.RC1IE=1;                 //Désactive les interruptions en réception
+  BAUDCONbits.BRG16=1;
+  
+  switch (Fclk)
+  {
+    case  1: SPBRG1=6; SPBRGH1=0; break;
+    case  2: SPBRG1=12; SPBRGH1=0; break;
+    case  4: SPBRG1=25; SPBRGH1=0; break;
+    case  8: SPBRG1=51; SPBRGH1=0; break;
+    case 16: SPBRG1=103; SPBRGH1=0; break;
+    case 32: SPBRG1=207; SPBRGH1=0; break;
+    case 64: SPBRG1=160; SPBRGH1=1; break;
+    default: SPBRG1=51; SPBRGH1=0; break;
+  }
+  
+  TXSTA1=0b00100100;               //TX9=0 émission sur 8 bits, TXEN=1 validation de l'émetteur
+                                   //SYNC=0 mode asynchrone, SENDB=0 pas d'émission de break, BRGH=1 
+  //RCSTA1=0b10010000;               //SPEN=1 validation de l'UART, RX9=0 réception sur 8 bits
+  RCSTA1=0b11010000;               //SPEN=1 validation de l'UART, RX9=1 réception sur 9 bits (2 bits de stop)
+                                   //CREN=1 validation du récepteur ADDEN=0 dévalidation de la détection d'adresses
+
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------
+//Emission d'un charactère sur le module UART n°1
+void UartWriteChar(unsigned char c)
+{
+  while (!TXSTA1bits.TRMT);        //éventuellement, attend la fin d'émission précédente
+  TXREG1=c;                        //lance l'émission
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------
+//Réception d'un caractère sur le module UART n°1
+//unsigned char UartReadChar(void)
+//{
+//  while (!PIR1bits.RCIF);           //attend la réception d'un caractère
+//  return(RCREG1);                  //lecture du tampon UART et retour
+//
+//}
+
+unsigned char UartReadChar(void)
+{
+    unsigned int timeout = 0; // Initialise un compteur de timeout
+    char raz;
+
+    while (!PIR1bits.RCIF)    // Attend la réception d'un caractère
+    {
+        if (++timeout > 50) // Vérifie si le timeout est dépassé (4/10^6 * 3 * 50= 600us)
+        {
+            raz=RCREG1;
+            return '\n';
+        }
+    }
+
+    return RCREG1;  // Lecture du tampon UART et retour
+}
