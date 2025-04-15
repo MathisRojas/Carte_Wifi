@@ -1,0 +1,41 @@
+<!--page_connection.html-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet carte Wi-Fi</title>
+    <link rel="icon" type="image/x-icon" href="ICOCW.ico"> <!-- Icône -->
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+    <script src="/socket.io/socket.io.js"></script> <!-- Script Socket.IO -->
+    <script src="client.js"></script> <!-- Script client.js -->
+    <script src="theme.js"></script> <!-- Script theme.js -->
+
+</head>
+<body>
+    <h1>Page de connexion</h1>
+    <h2>Entrez un mot de passe</h2>
+    <label for="mdp">Mot de passe :</label>
+    <input type="text" id="mdp" placeholder="Mot de passe">
+    <button onclick="connection()">Se connecter</button>
+    <p id="connection"></p>
+
+    <!-- Bouton de retour -->
+    <button onclick="retour()">Retour</button>
+
+    <!-- Overlay pour afficher les messages dynamiques -->
+    <div id="overlay" style="display: none;">
+        <div id="overlay-content">
+            <p id="overlay-message">Connexion en cours...</p>
+        </div>
+    </div>
+
+    <div id="themeToggleContainer">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    
+</body>
+</html>

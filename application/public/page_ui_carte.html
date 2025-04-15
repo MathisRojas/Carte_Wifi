@@ -1,0 +1,44 @@
+<!--page_ui_carte.html-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet carte Wi-Fi</title>
+    <link rel="icon" type="image/x-icon" href="ICOCW.ico"> <!-- Icône -->
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+    <script src="/socket.io/socket.io.js"></script> <!-- Script Socket.IO -->
+    <script src="client.js"></script> <!-- Script client.js -->
+    <script src="theme.js"></script> <!-- Script theme.js -->
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h1>Page de la carte</h1>
+    <h2>Communication avec la carte Wi-Fi</h2>
+    <label for="tcpMessage">Message à envoyer :</label>
+    <input type="text" id="tcpMessage" placeholder="Entrez votre message" disabled> <!-- Désactivé par défaut -->
+    <button onclick="envoyerMessage()" id="btnEnvoyer" disabled >Envoyer</button> <!-- Désactivé par défaut -->
+    <p></p>
+    <button onclick="connecterTCP()">Se connecter au serveur TCP</button>
+    <button onclick="deconnecterTCP()">Se déconnecter du serveur TCP</button>
+    <p><span id="messages_temp_TCP"></span><span id="messages_hum_TCP"></span></p>
+    <button onclick="ouvrir_relai()">Ouvrir le relai</button><!-- On envoie 00-->
+    <button onclick="fermer_relai()">Fermer le relai</button><!-- On envoie 01-->
+
+    <!-- Overlay pour afficher les messages dynamiques -->
+    <div id="overlay" style="display: none;">
+        <div id="overlay-content">
+            <p id="overlay-message">Connexion en cours...</p>
+        </div>
+    </div>
+
+    <div id="themeToggleContainer">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    
+</body>
+</html>
+

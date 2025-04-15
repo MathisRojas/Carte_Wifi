@@ -1,0 +1,42 @@
+<!--home.html-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet carte Wi-Fi</title>
+    <link rel="icon" type="image/x-icon" href="ICOCW.ico"> <!-- Icône -->
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+    <script src="/socket.io/socket.io.js"></script> <!-- Script Socket.IO -->
+    <script src="client.js"></script> <!-- Script client.js -->
+    <script src="theme.js"></script> <!-- Script theme.js -->
+</head>
+
+<body>
+    <h1>Sélection du Wi-Fi</h1>
+    <h2>Entrez un SSID ou sélectionnez un réseau Wi-Fi</h2>
+    
+    <label for="ipInput">SSID :</label>
+    <input type="text" id="ssidInput" placeholder="Ex:nom_du_wifi">
+    <button onclick="envoyerssid()">Envoyer</button>
+    
+    <p></p>
+    <button onclick="scannerWifi()">Scanner les réseaux</button>
+    <div id="wifiList" class="wifi-list">
+        <p>Aucun réseau trouvé pour le moment...</p>
+    </div>
+
+    <p id="resultat"></p>
+
+    <!-- Bouton/lien vers la page suivante (masqué par défaut) -->
+    <a id="nextPageButton" href="/page_connection.html" style="display: none;">Passer à la page de connexion</a>
+
+    <div id="themeToggleContainer">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    
+</body>
+</html>

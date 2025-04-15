@@ -1,0 +1,196 @@
+/* Container pour le toggle */
+#themeToggleContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Styles pour le switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 25px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #003D4B;
+}
+
+input:checked + .slider:before {
+    transform: translateX(25px);
+}
+
+
+/* Mode clair */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FEFCEA;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Titres */
+h1, h2 {
+    color: #003D4B;
+}
+
+/* Boutons et liens en forme de boutons */
+button, a#nextPageButton {
+    padding: 10px 20px;
+    background-color: #003D4B;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover, a#nextPageButton:hover {
+    background-color: #00506E;
+}
+
+/* Lien vers la page de connexion (caché par défaut) */
+a#nextPageButton {
+    display: none; /* Caché par défaut */
+}
+
+/* Liste des réseaux Wi-Fi */
+.wifi-list {
+    margin: 20px auto;
+    max-width: 500px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #C2C0B3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.wifi-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.wifi-item:hover {
+    background-color: #f0f4f9;
+    cursor: pointer;
+}
+
+.wifi-item:last-child {
+    border-bottom: none;
+}
+
+/* Overlay pour l'état de la connexion */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#overlay-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Mode sombre */
+body.dark-mode {
+    background-color: #1e1e1e; /* Fond sombre */
+    color: #e0e0e0;           /* Texte clair */
+}
+
+/* Titres */
+body.dark-mode h1, 
+body.dark-mode h2 {
+    color: #2ba0ca98; /* Bleu clair */
+}
+
+/* Boutons et liens en forme de boutons */
+body.dark-mode button, 
+body.dark-mode a#nextPageButton {
+    background-color: #2ba0ca98;
+    color: #1e1e1e;
+}
+
+body.dark-mode button:hover, 
+body.dark-mode a#nextPageButton:hover {
+    background-color: #61b2d1;
+}
+
+/* Liste des réseaux Wi-Fi */
+body.dark-mode .wifi-list {
+    background: #333;
+    border: 1px solid #444;
+}
+
+body.dark-mode .wifi-item {
+    border-bottom: 1px solid #555;
+}
+
+body.dark-mode .wifi-item:hover {
+    background-color: #444;
+}
+
+/* Overlay pour l'état de la connexion */
+body.dark-mode #overlay {
+    background-color: rgba(255, 255, 255, 0.1); /* Fond clair semi-transparent */
+}
+
+body.dark-mode #overlay-content {
+    background-color: #3b9fc3;
+    color: #000000;
+}
