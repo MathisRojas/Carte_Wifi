@@ -1,0 +1,221 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" version="26.1.1">
+  <diagram name="Page-1" id="ca7pxn3QDtRuIXZrabN_">
+    <mxGraphModel dx="2911" dy="1130" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Télécommande wifi&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;text-align:left;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;id=&quot;1&quot;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;text=&quot;&lt;span style=&quot;background-color: initial;&quot;&gt;Concevoir un&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;module compact et autonome capable de piloter des actionneurs et de contrôler&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;des données de capteurs environnementaux via un microcontrôleur PIC18F26K22,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;avec une Application Wi-Fi depuis un téléphone portable ou un PC.&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="shape=rect;overflow=fill;html=1;whiteSpace=wrap;align=center;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1;gradientColor=#FFB570;" parent="1" vertex="1">
+          <mxGeometry x="350" y="10" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Alimentation/Autonomie&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;id=&quot;1.2&quot;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;text=&quot;Le module doit avoir une faible consommation d’énergie afin de pouvoir être alimenté par une batterie et permettre un fonctionnement prolongé sans intervention fréquente pendant plusieurs semaines.&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="shape=rect;overflow=fill;html=1;whiteSpace=wrap;align=center;strokeWidth=1;fillColor=#99FF99;strokeColor=#00FF00;" parent="1" vertex="1">
+          <mxGeometry x="735" y="30" width="270" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Structure&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;hr&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;id=&quot;1.3&quot;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;text=&quot;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;&lt;font style=&quot;&quot;&gt;Le module doit être compact pour qu’il puisse être installé dans un boîtier, afin de rendre le module plus robuste. L’utilisation de connecteurs permettra de brancher différents types de capteurs et d&#39;actionneurs, et de rendre le module évolutif&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="shape=rect;overflow=fill;html=1;whiteSpace=wrap;align=center;strokeWidth=1;fillColor=#99FF99;strokeColor=#00FF00;" parent="1" vertex="1">
+          <mxGeometry x="-40" y="30" width="330" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Pilotage des capteurs et actionneurs&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;id=&quot;1.1&quot;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;text=&quot;Le module devra piloter des actionneurs et intégrer des capteurs (de température et d&#39;humidité) afin d&#39;informer l&#39;utilisateur des conditions environnementales du système via une application (PC et téléphone) par liaison Wi-Fi. L&#39;utilisateur pourra également piloter les actionneurs (relais) à distance grâce à cette application&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="shape=rect;overflow=fill;html=1;whiteSpace=wrap;align=center;strokeWidth=1;fillColor=#99FF99;strokeColor=#00FF00;" parent="1" vertex="1">
+          <mxGeometry x="320" y="260" width="340" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-9" value="" style="rounded=0;html=1;labelBackgroundColor=none;endArrow=none;edgeStyle=elbowEdgeStyle;elbow=vertical;startArrow=sysMLPackCont;startSize=12;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="120" as="sourcePoint" />
+            <mxPoint x="292" y="120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="330" y="120" />
+              <mxPoint x="330" y="120" />
+              <mxPoint x="480" y="100" />
+              <mxPoint x="480" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-10" value="" style="rounded=0;html=1;labelBackgroundColor=none;endArrow=none;edgeStyle=elbowEdgeStyle;elbow=vertical;startArrow=sysMLPackCont;startSize=12;entryX=0;entryY=0.47;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="b8uuXoH9fd0aGBLaR0QP-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="115" as="sourcePoint" />
+            <mxPoint x="679.9999999999999" y="106.80000000000004" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="661.08" y="115.4" />
+              <mxPoint x="360.08" y="146.4" />
+              <mxPoint x="360.08" y="196.4" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-11" value="" style="rounded=0;html=1;labelBackgroundColor=none;endArrow=none;edgeStyle=elbowEdgeStyle;elbow=vertical;startArrow=sysMLPackCont;startSize=12;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-1" target="b8uuXoH9fd0aGBLaR0QP-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="641" y="100" as="sourcePoint" />
+            <mxPoint x="641" y="147" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-12" value="&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;Boitié imprimé en 3D" style="shape=rect;html=1;whiteSpace=wrap;align=center;strokeColor=#FFB570;strokeWidth=0;fillColor=#FFF4C3;gradientColor=#FF9933;" parent="1" vertex="1">
+          <mxGeometry x="-40" y="260" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-13" value="&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;PCB (Kicad)" style="shape=rect;html=1;whiteSpace=wrap;align=center;strokeColor=#FFB570;strokeWidth=0;fillColor=#FFF4C3;gradientColor=#FF9933;" parent="1" vertex="1">
+          <mxGeometry x="110" y="260" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-14" value="&amp;lt;&amp;lt;satisfy&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.621;entryY=0.993;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-13" target="b8uuXoH9fd0aGBLaR0QP-3" edge="1">
+          <mxGeometry x="-0.5856" y="-34" relative="1" as="geometry">
+            <mxPoint x="470" y="400" as="sourcePoint" />
+            <mxPoint x="513" y="312" as="targetPoint" />
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-15" value="&amp;lt;&amp;lt;satisfy&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.362;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-12" target="b8uuXoH9fd0aGBLaR0QP-3" edge="1">
+          <mxGeometry x="-0.9649" y="42" relative="1" as="geometry">
+            <mxPoint x="180" y="270" as="sourcePoint" />
+            <mxPoint x="144" y="219" as="targetPoint" />
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-16" value="&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;Batterie" style="shape=rect;html=1;whiteSpace=wrap;align=center;strokeColor=#FFB570;strokeWidth=0;fillColor=#FFF4C3;gradientColor=#FF9933;" parent="1" vertex="1">
+          <mxGeometry x="680" y="260" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-17" value="&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;deep sleep" style="shape=rect;html=1;whiteSpace=wrap;align=center;strokeColor=#FFB570;strokeWidth=0;fillColor=#FFF4C3;gradientColor=#FF9933;" parent="1" vertex="1">
+          <mxGeometry x="970" y="260" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-18" value="&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;Régulateur de tension basse consommation" style="shape=rect;html=1;whiteSpace=wrap;align=center;strokeColor=#FFB570;strokeWidth=0;fillColor=#FFF4C3;gradientColor=#FF9933;" parent="1" vertex="1">
+          <mxGeometry x="800" y="250" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-20" value="&amp;lt;&amp;lt;satisfy&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.207;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-16" target="b8uuXoH9fd0aGBLaR0QP-2" edge="1">
+          <mxGeometry x="-0.6578" y="27" relative="1" as="geometry">
+            <mxPoint x="190" y="280" as="sourcePoint" />
+            <mxPoint x="154" y="229" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-21" value="&amp;lt;&amp;lt;satisfy&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-18" target="b8uuXoH9fd0aGBLaR0QP-2" edge="1">
+          <mxGeometry y="40" relative="1" as="geometry">
+            <mxPoint x="200" y="290" as="sourcePoint" />
+            <mxPoint x="164" y="239" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-22" value="&amp;lt;&amp;lt;satisfy&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-17" target="b8uuXoH9fd0aGBLaR0QP-2" edge="1">
+          <mxGeometry x="-0.5562" y="-22" relative="1" as="geometry">
+            <mxPoint x="735" y="270" as="sourcePoint" />
+            <mxPoint x="801" y="220" as="targetPoint" />
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-23" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial; text-align: start;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Communication&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bp%20style%3D%26quot%3Bmargin%3A0px%3Bmargin-top%3A4px%3Btext-align%3Acenter%3B%26quot%3B%26gt%3B%26amp%3Blt%3B%26amp%3Blt%3Brequirement%26amp%3Bgt%3B%26amp%3Bgt%3B%26lt%3Bbr%26gt%3B%26lt%3Bb%26gt%3BArrosage%26amp%3Bnbsp%3Bautomatique%26lt%3B%2Fb%26gt%3B%26lt%3B%2Fp%26gt%3B%26lt%3Bhr%26gt%3B%26lt%3Bp%26gt%3B%26lt%3B%2Fp%26gt%3B%26lt%3Bp%20style%3D%26quot%3Bmargin%3A%200px%200px%200px%208px%3B%20text-align%3A%20left%3B%26quot%3B%26gt%3Bid%3D%26quot%3B1.1.1%26quot%3B%26lt%3B%2Fp%26gt%3B%26lt%3Bp%20style%3D%26quot%3Bmargin%3A0px%3Bmargin-left%3A8px%3Btext-align%3Aleft%3B%26quot%3B%26gt%3Btext%3D%26quot%3Bl&#39;utilisateur%20doit%20pouvoir%20r%C3%A9gler%20l&#39;arrosage%20en%20fonction%20de%20l&#39;humidit%C3%A9%20voulu%20pour%20le%20bon%20d%C3%A9veloppement%20de%20ces%20plantes%20et%20le%20r%C3%A9servoir%20du%20syst%C3%A8me%20d&#39;arrosage%20doit%20permettre%20une%20autonomie%20de%201-2%20semaines%20il%20doit%20faire%20entre%203-5%20litres%26quot%3B%26lt%3B%2Fp%26gt%3B%22%20style%3D%22shape%3Drect%3Boverflow%3Dfill%3Bhtml%3D1%3BwhiteSpace%3Dwrap%3Balign%3Dcenter%3BstrokeWidth%3D1%3BfillColor%3D%23f8cecc%3BstrokeColor%3D%23FF3333%3BgradientColor%3D%23FF3333%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2280%22%20y%3D%22520%22%20width%3D%22210%22%20height%3D%22170%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;hr&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;id=&quot;1.1.1&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;text-align:left;&quot;&gt;text=&quot;&lt;span style=&quot;font-family: Calibri, sans-serif; background-color: initial; text-align: center;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;La liaison Wi-Fi devra être assurée par un module Wi-Fi ESP01&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;&lt;/span&gt;&lt;/p&gt;" style="shape=rect;overflow=fill;html=1;whiteSpace=wrap;align=center;strokeWidth=1;fillColor=#f8cecc;strokeColor=#FF3333;gradientColor=#FF3333;" parent="1" vertex="1">
+          <mxGeometry x="590" y="530" width="220" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-24" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Contrôle des actionneurs&lt;/b&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap; background-color: initial;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bp%20style%3D%26quot%3Bmargin%3A0px%3Bmargin-top%3A4px%3Btext-align%3Acenter%3B%26quot%3B%26gt%3B%26amp%3Blt%3B%26amp%3Blt%3Brequirement%26amp%3Bgt%3B%26amp%3Bgt%3B%26lt%3Bbr%26gt%3B%26lt%3Bb%26gt%3BArrosage%26amp%3Bnbsp%3Bautomatique%26lt%3B%2Fb%26gt%3B%26lt%3B%2Fp%26gt%3B%26lt%3Bhr%26gt%3B%26lt%3Bp%26gt%3B%26lt%3B%2Fp%26gt%3B%26lt%3Bp%20style%3D%26quot%3Bmargin%3A%200px%200px%200px%208px%3B%20text-align%3A%20left%3B%26quot%3B%26gt%3Bid%3D%26quot%3B1.1.1%26quot%3B%26lt%3B%2Fp%26gt%3B%26lt%3Bp%20style%3D%26quot%3Bmargin%3A0px%3Bmargin-left%3A8px%3Btext-align%3Aleft%3B%26quot%3B%26gt%3Btext%3D%26quot%3Bl&#39;utilisateur%20doit%20pouvoir%20r%C3%A9gler%20l&#39;arrosage%20en%20fonction%20de%20l&#39;humidit%C3%A9%20voulu%20pour%20le%20bon%20d%C3%A9veloppement%20de%20ces%20plantes%20et%20le%20r%C3%A9servoir%20du%20syst%C3%A8me%20d&#39;arrosage%20doit%20permettre%20une%20autonomie%20de%201-2%20semaines%20il%20doit%20faire%20entre%203-5%20litres%26quot%3B%26lt%3B%2Fp%26gt%3B%22%20style%3D%22shape%3Drect%3Boverflow%3Dfill%3Bhtml%3D1%3BwhiteSpace%3Dwrap%3Balign%3Dcenter%3BstrokeWidth%3D1%3BfillColor%3D%23f8cecc%3BstrokeColor%3D%23FF3333%3BgradientColor%3D%23FF3333%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2280%22%20y%3D%22520%22%20width%3D%22210%22%20height%3D%22170%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/p&gt;&lt;hr&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;id=&quot;1.1.1&quot;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;text=&quot;&lt;font style=&quot;&quot;&gt;Le contrôle des actionneurs est assuré par des relais, permettant de piloter une grande variété de systèmes, qu&#39;il s&#39;agisse de dispositifs domotiques en (AC) ou de petits dispositifs en (DC)&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Capacité de commutation des contacts :&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Charge résistive AC : 250V AC, jusqu&#39;à 16A&quot;&lt;/span&gt;&lt;/p&gt;" style="shape=rect;overflow=fill;html=1;whiteSpace=wrap;align=center;strokeWidth=1;fillColor=#f8cecc;strokeColor=#FF3333;gradientColor=#FF3333;" parent="1" vertex="1">
+          <mxGeometry x="180" y="530" width="210" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-25" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Apllication PC/Android&lt;/b&gt;&lt;/font&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; text-align: start; text-wrap: nowrap; background-color: initial; font-size: 0px;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bp%20style%3D%26quot%3Bmargin%3A0px%3Bmargin-top%3A4px%3Btext-align%3Acenter%3B%26quot%3B%26gt%3B%26amp%3Blt%3B%26amp%3Blt%3Brequirement%26amp%3Bgt%3B%26amp%3Bgt%3B%26lt%3Bbr%26gt%3B%26lt%3Bb%26gt%3BArrosage%26amp%3Bnbsp%3Bautomatique%26lt%3B%2Fb%26gt%3B%26lt%3B%2Fp%26gt%3B%26lt%3Bhr%26gt%3B%26lt%3Bp%26gt%3B%26lt%3B%2Fp%26gt%3B%26lt%3Bp%20style%3D%26quot%3Bmargin%3A%200px%200px%200px%208px%3B%20text-align%3A%20left%3B%26quot%3B%26gt%3Bid%3D%26quot%3B1.1.1%26quot%3B%26lt%3B%2Fp%26gt%3B%26lt%3Bp%20style%3D%26quot%3Bmargin%3A0px%3Bmargin-left%3A8px%3Btext-align%3Aleft%3B%26quot%3B%26gt%3Btext%3D%26quot%3Bl&#39;utilisateur%20doit%20pouvoir%20r%C3%A9gler%20l&#39;arrosage%20en%20fonction%20de%20l&#39;humidit%C3%A9%20voulu%20pour%20le%20bon%20d%C3%A9veloppement%20de%20ces%20plantes%20et%20le%20r%C3%A9servoir%20du%20syst%C3%A8me%20d&#39;arrosage%20doit%20permettre%20une%20autonomie%20de%201-2%20semaines%20il%20doit%20faire%20entre%203-5%20litres%26quot%3B%26lt%3B%2Fp%26gt%3B%22%20style%3D%22shape%3Drect%3Boverflow%3Dfill%3Bhtml%3D1%3BwhiteSpace%3Dwrap%3Balign%3Dcenter%3BstrokeWidth%3D1%3BfillColor%3D%23f8cecc%3BstrokeColor%3D%23FF3333%3BgradientColor%3D%23FF3333%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2280%22%20y%3D%22520%22%20width%3D%22210%22%20height%3D%22170%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/p&gt;&lt;hr&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;id=&quot;1.1.1&quot;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;text=&lt;font style=&quot;&quot;&gt;&quot;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;Le module doit être contrôlable via une application PC ou téléphone permettant de gérer les actionneurs et capteurs via une&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;font-family: Calibri, sans-serif; background-color: initial; text-align: center;&quot;&gt;&lt;font style=&quot;&quot;&gt;interface graphique (GUI)&lt;/font&gt;&lt;/span&gt;&lt;font style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;.&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="shape=rect;overflow=fill;html=1;whiteSpace=wrap;align=center;strokeWidth=1;fillColor=#f8cecc;strokeColor=#FF3333;gradientColor=#FF3333;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="530" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-27" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;capteurs&lt;/b&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap; background-color: initial;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bp%20style%3D%26quot%3Bmargin%3A0px%3Bmargin-top%3A4px%3Btext-align%3Acenter%3B%26quot%3B%26gt%3B%26amp%3Blt%3B%26amp%3Blt%3Brequirement%26amp%3Bgt%3B%26amp%3Bgt%3B%26lt%3Bbr%26gt%3B%26lt%3Bb%26gt%3BArrosage%26amp%3Bnbsp%3Bautomatique%26lt%3B%2Fb%26gt%3B%26lt%3B%2Fp%26gt%3B%26lt%3Bhr%26gt%3B%26lt%3Bp%26gt%3B%26lt%3B%2Fp%26gt%3B%26lt%3Bp%20style%3D%26quot%3Bmargin%3A%200px%200px%200px%208px%3B%20text-align%3A%20left%3B%26quot%3B%26gt%3Bid%3D%26quot%3B1.1.1%26quot%3B%26lt%3B%2Fp%26gt%3B%26lt%3Bp%20style%3D%26quot%3Bmargin%3A0px%3Bmargin-left%3A8px%3Btext-align%3Aleft%3B%26quot%3B%26gt%3Btext%3D%26quot%3Bl&#39;utilisateur%20doit%20pouvoir%20r%C3%A9gler%20l&#39;arrosage%20en%20fonction%20de%20l&#39;humidit%C3%A9%20voulu%20pour%20le%20bon%20d%C3%A9veloppement%20de%20ces%20plantes%20et%20le%20r%C3%A9servoir%20du%20syst%C3%A8me%20d&#39;arrosage%20doit%20permettre%20une%20autonomie%20de%201-2%20semaines%20il%20doit%20faire%20entre%203-5%20litres%26quot%3B%26lt%3B%2Fp%26gt%3B%22%20style%3D%22shape%3Drect%3Boverflow%3Dfill%3Bhtml%3D1%3BwhiteSpace%3Dwrap%3Balign%3Dcenter%3BstrokeWidth%3D1%3BfillColor%3D%23f8cecc%3BstrokeColor%3D%23FF3333%3BgradientColor%3D%23FF3333%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2280%22%20y%3D%22520%22%20width%3D%22210%22%20height%3D%22170%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/p&gt;&lt;hr&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;id=&quot;1.1.1&quot;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;text=&quot;Le module doit permettre de brancher différents types de capteurs afin de rendre le système évolutif et adaptable à différents domaines d&#39;application.&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;&quot;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;text-align:left;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="shape=rect;overflow=fill;html=1;whiteSpace=wrap;align=center;strokeWidth=1;fillColor=#f8cecc;strokeColor=#FF3333;gradientColor=#FF3333;" parent="1" vertex="1">
+          <mxGeometry x="870" y="530" width="210" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-28" value="&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;span style=&quot;line-height: 107%; font-family: Calibri, sans-serif;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;PIC18F26K22&lt;/font&gt;&lt;/span&gt;" style="shape=rect;html=1;whiteSpace=wrap;align=center;strokeColor=#FFB570;strokeWidth=0;fillColor=#FFF4C3;gradientColor=#FF9933;" parent="1" vertex="1">
+          <mxGeometry x="445" y="530" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-29" value="&amp;lt;&amp;lt;satisfy&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-28" target="b8uuXoH9fd0aGBLaR0QP-4" edge="1">
+          <mxGeometry x="-0.1429" y="40" relative="1" as="geometry">
+            <mxPoint x="735" y="270" as="sourcePoint" />
+            <mxPoint x="801" y="220" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-30" value="&amp;lt;&amp;lt;refine&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-27" target="b8uuXoH9fd0aGBLaR0QP-4" edge="1">
+          <mxGeometry x="-0.1633" y="-22" relative="1" as="geometry">
+            <mxPoint x="1090" y="520" as="sourcePoint" />
+            <mxPoint x="705" y="310" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-31" value="&amp;lt;&amp;lt;refine&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-23" target="b8uuXoH9fd0aGBLaR0QP-4" edge="1">
+          <mxGeometry x="-0.399" y="-22" relative="1" as="geometry">
+            <mxPoint x="942" y="510" as="sourcePoint" />
+            <mxPoint x="670" y="370" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-32" value="&amp;lt;&amp;lt;refine&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-24" target="b8uuXoH9fd0aGBLaR0QP-4" edge="1">
+          <mxGeometry x="-0.5233" y="27" relative="1" as="geometry">
+            <mxPoint x="705" y="540" as="sourcePoint" />
+            <mxPoint x="585" y="470" as="targetPoint" />
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-33" value="&amp;lt;&amp;lt;refine&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-25" target="b8uuXoH9fd0aGBLaR0QP-4" edge="1">
+          <mxGeometry x="-0.2074" y="27" relative="1" as="geometry">
+            <mxPoint x="295" y="540" as="sourcePoint" />
+            <mxPoint x="415" y="470" as="targetPoint" />
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-34" value="&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;font face=&quot;Calibri, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;ESP01&lt;/span&gt;&lt;/font&gt;" style="shape=rect;html=1;whiteSpace=wrap;align=center;strokeColor=#FFB570;strokeWidth=0;fillColor=#FFF4C3;gradientColor=#FF9933;" parent="1" vertex="1">
+          <mxGeometry x="590" y="740" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-35" value="&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;font face=&quot;Calibri, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Protocole TCP/IP&lt;/span&gt;&lt;/font&gt;" style="shape=rect;html=1;whiteSpace=wrap;align=center;strokeColor=#FFB570;strokeWidth=0;fillColor=#FFF4C3;gradientColor=#FF9933;" parent="1" vertex="1">
+          <mxGeometry x="700" y="740" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-37" value="&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;Node.js" style="shape=rect;html=1;whiteSpace=wrap;align=center;strokeColor=#FFB570;strokeWidth=0;fillColor=#FFF4C3;gradientColor=#FF9933;" parent="1" vertex="1">
+          <mxGeometry x="-30" y="750" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-38" value="&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;font face=&quot;Calibri, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;relais bistables&lt;/span&gt;&lt;/font&gt;" style="shape=rect;html=1;whiteSpace=wrap;align=center;strokeColor=#FFB570;strokeWidth=0;fillColor=#FFF4C3;gradientColor=#FF9933;" parent="1" vertex="1">
+          <mxGeometry x="150" y="810" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-40" value="&amp;lt;&amp;lt;refine&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-35" edge="1">
+          <mxGeometry x="-0.84" y="-28" relative="1" as="geometry">
+            <mxPoint x="855" y="770" as="sourcePoint" />
+            <mxPoint x="730" y="700" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-41" value="&amp;lt;&amp;lt;refine&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.37;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-34" target="b8uuXoH9fd0aGBLaR0QP-23" edge="1">
+          <mxGeometry x="-1" y="25" relative="1" as="geometry">
+            <mxPoint x="770" y="750" as="sourcePoint" />
+            <mxPoint x="740" y="710" as="targetPoint" />
+            <mxPoint x="-1" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-43" value="&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;font face=&quot;Calibri, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Capteurs numériques I2C&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Calibri, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;(humidité/température)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=rect;html=1;whiteSpace=wrap;align=center;strokeColor=#FFB570;strokeWidth=0;fillColor=#FFF4C3;gradientColor=#FF9933;" parent="1" vertex="1">
+          <mxGeometry x="845" y="760" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-45" value="&amp;lt;&amp;lt;refine&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-37" target="b8uuXoH9fd0aGBLaR0QP-25" edge="1">
+          <mxGeometry x="-0.1603" y="-34" relative="1" as="geometry">
+            <mxPoint x="770" y="750" as="sourcePoint" />
+            <mxPoint x="740" y="710" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-50" value="&amp;lt;&amp;lt;refine&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-38" target="b8uuXoH9fd0aGBLaR0QP-24" edge="1">
+          <mxGeometry x="-0.6" y="35" relative="1" as="geometry">
+            <mxPoint x="645" y="750" as="sourcePoint" />
+            <mxPoint x="681" y="712" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8uuXoH9fd0aGBLaR0QP-51" value="&amp;lt;&amp;lt;refine&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="b8uuXoH9fd0aGBLaR0QP-43" target="b8uuXoH9fd0aGBLaR0QP-27" edge="1">
+          <mxGeometry x="-0.3631" y="33" relative="1" as="geometry">
+            <mxPoint x="770" y="750" as="sourcePoint" />
+            <mxPoint x="740" y="710" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WDVPas99Vy_Qltk4uQ0z-1" value="&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;font face=&quot;Calibri, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Transistors&lt;/span&gt;&lt;/font&gt;" style="shape=rect;html=1;whiteSpace=wrap;align=center;strokeColor=#FFB570;strokeWidth=0;fillColor=#FFF4C3;gradientColor=#FF9933;" vertex="1" parent="1">
+          <mxGeometry x="294" y="810" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WDVPas99Vy_Qltk4uQ0z-2" value="&amp;lt;&amp;lt;refine&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="WDVPas99Vy_Qltk4uQ0z-1">
+          <mxGeometry x="-0.9365" y="-33" relative="1" as="geometry">
+            <mxPoint x="220" y="820" as="sourcePoint" />
+            <mxPoint x="320" y="760" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WDVPas99Vy_Qltk4uQ0z-6" value="&amp;lt;&amp;lt;block&amp;gt;&amp;gt;&lt;br&gt;&lt;font face=&quot;Calibri, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;BUS I2C&lt;/span&gt;&lt;/font&gt;" style="shape=rect;html=1;whiteSpace=wrap;align=center;strokeColor=#FFB570;strokeWidth=0;fillColor=#FFF4C3;gradientColor=#FF9933;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="767.5" width="160" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="WDVPas99Vy_Qltk4uQ0z-7" value="&amp;lt;&amp;lt;refine&amp;gt;&amp;gt;" style="endArrow=open;edgeStyle=none;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.644;entryY=0.994;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WDVPas99Vy_Qltk4uQ0z-6" target="b8uuXoH9fd0aGBLaR0QP-27">
+          <mxGeometry x="-0.4247" y="-23" relative="1" as="geometry">
+            <mxPoint x="935" y="745" as="sourcePoint" />
+            <mxPoint x="950" y="710" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

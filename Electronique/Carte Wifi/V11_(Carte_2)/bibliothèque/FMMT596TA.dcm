@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FMMT596TA
+D Bipolar (BJT) Transistor PNP 200 V 300 mA 150MHz 500 mW Surface Mount SOT-23-3
+K
+F https://www.diodes.com//assets/Datasheets/FMMT596.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '2SCR514RTL'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "ROHM Semiconductor", "2SCR514RTL" (!) = "", "2SCR514RTL", "Other", "755-2SCR514RTL", "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/2SCR514RTL?qs=%2FKR40Cd6GUphgPCgvqkTFQ%3D%3D", "NPN, SOT-346T, 80V 0.7A, Driver Transistor", "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/bipolar/2scr514rtl-e.pdf", "1 mm"
+END_PART
+
+END.

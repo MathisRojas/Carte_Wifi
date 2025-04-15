@@ -1,0 +1,37 @@
+PCBNEW-LibModule-V1  2024-11-25 10:15:14
+# encoding utf-8
+Units mm
+$INDEX
+NR3015
+$EndINDEX
+$MODULE NR3015
+Po 0 0 0 15 67444e32 00000000 ~~
+Li NR3015
+Cd NR 3015
+Kw Inductor
+Sc 0
+At SMD
+AR 
+Op 0 0 0
+T0 -0.297 -0.051 1.27 1.27 0 0.254 N V 21 N "L**"
+T1 -0.297 -0.051 1.27 1.27 0 0.254 N I 21 N "NR3015"
+DS -1.5 -1.5 1.5 -1.5 0.2 24
+DS 1.5 -1.5 1.5 1.5 0.2 24
+DS 1.5 1.5 -1.5 1.5 0.2 24
+DS -1.5 1.5 -1.5 -1.5 0.2 24
+DS -1.5 1.5 1.5 1.5 0.2 21
+DS 1.5 -1.5 -1.5 -1.5 0.2 21
+$PAD
+Po -1.1 0
+Sh "1" R 0.8 2.7 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 1.1 0
+Sh "2" R 0.8 2.7 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$EndMODULE NR3015
+$EndLIBRARY

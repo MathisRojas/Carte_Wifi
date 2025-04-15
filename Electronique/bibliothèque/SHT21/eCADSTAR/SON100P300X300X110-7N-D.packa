@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "SHT21"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-01-31-08:13:58)
+    (mountForm default
+        (footprintRef "SON100P300X300X110-7N-D")
+        (spec "System")
+    )
+)

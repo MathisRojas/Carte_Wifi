@@ -1,0 +1,152 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "2SCR514RTL"
+   (description "NPN, SOT-346T, 80V 0.7A, Driver Transistor")
+   (family "TRX")
+   (package "2SCR514RTL")
+   (attribute "Datasheet Link" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/bipolar/2scr514rtl-e.pdf")
+   (attribute "Geometry.Height" "1mm")
+   (attribute "Mouser Part Number" "755-2SCR514RTL")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/2SCR514RTL?qs=%2FKR40Cd6GUphgPCgvqkTFQ%3D%3D")
+   (attribute "Manufacturer_Name" "ROHM Semiconductor")
+   (attribute "Manufacturer_Part_Number" "2SCR514RTL")
+   (gate
+    (symbol "2SCR514RTL")
+    (pin "B" 1 PS)
+    (pin "E" 2 PS)
+    (pin "C" 3 PS)
+   )
+  )
+  (symbol "2SCR514RTL"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (circle (pt 400 150) (pt 300 -150))
+   )
+   (graphic
+    (stroke 20)
+    (path (pt 300 100) (pt 300 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 50) (pt 400 150))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 -50) (pt 400 -150))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 400 -150) (pt 400 -200))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 400 150) (pt 400 200))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 100 0) (pt 300 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (closed true) (pt 330 -100) (pt 350 -80) (pt 370 -120) (pt 330 -100))
+   )
+   (terminal
+    (body (symbol "PINSHORT") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -20) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 20) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 400 -300) (rot 90) (mir 0) (visible true))
+    (name (pt 0 -20) (rot 90) (just TOP RIGHT) (visible false))
+    (number (pt 0 20) (rot 90) (just TOP LEFT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 400 300) (rot 90) (mir X) (visible true))
+    (name (pt 0 -20) (rot 90) (just TOP RIGHT) (visible false))
+    (number (pt 0 20) (rot 90) (just TOP LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "2SCR514RTL"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.45 -0.825)
+      (pt 1.45 -0.825)
+      (pt 1.45 0.825)
+      (pt -1.45 0.825)
+      (pt -1.45 -0.825))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.45 2.5)
+      (pt 2.45 2.5)
+      (pt 2.45 -2.5)
+      (pt -2.45 -2.5)
+      (pt -2.45 2.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -0.8 0.8)
+      (pt -1.4 0.8)
+      (pt -1.45 0.8)
+      (pt -1.45 -0.4))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 0.8 0.825)
+      (pt 1.45 0.825)
+      (pt 1.45 -0.4))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -0.2 -0.825)
+      (pt 0.2 -0.825))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -0.95 -2.1)
+      (arc (pt -0.950 -2.100) (pt -1.000 -2.100) (pt -0.900 -2.000) (start 180.0) (sweep -90.0))
+      (pt -0.95 -2)
+      (arc (pt -0.950 -2.000) (pt -1.000 -2.100) (pt -0.900 -2.000) (start 180.0) (sweep 90.0))
+      (pt -0.95 -2.1))))
+   (leg 1 (pt -0.950 -1.050) (padstack 0))
+   (leg 2 (pt 0.950 -1.050) (padstack 0))
+   (leg 3 (pt 0.000 1.050) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.700 0.900 0 0 90.000))
+   )
+   (model "2SCR514RTL.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

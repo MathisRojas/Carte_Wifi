@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SHT21
+D Sensor Humidity & Temp 2%RH I2C DFN6 SHT21, 8
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/DKDS-37/728928.pdf
+$ENDCMP
+#
+#End Doc Library

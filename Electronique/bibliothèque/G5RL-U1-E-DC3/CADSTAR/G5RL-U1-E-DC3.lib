@@ -1,0 +1,15 @@
+.G5RL-U1-E-DC3 :1 ;General Purpose Relays 16A hi swtch curent latching relay
+G5RLU1E
+*STM K
+*NGS
+*PLB 1="S+/R-" 2="NC_1" 3="COM_1" 4="NO_1" 5="NO_2" 6="COM_2" 7="NC_2" 8="S-/R+"
+*MXP 8
+*DFN G5RL-U1-E-DC3
+~!Mouser Part Number (653-G5RLU1EDC3)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G5RL-U1-E-DC3?qs=9CM3gX%252B2VGH2i8p8HDDMCw%3D%3D)
+~!Manufacturer_Name (Omron Electronics)
+~!Manufacturer_Part_Number (G5RL-U1-E-DC3)
+~!Link Datasheet (https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5rl_uk.pdf)
+~!Height (-)
+G5RL-U1-E-DC3
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 

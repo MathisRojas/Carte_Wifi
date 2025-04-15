@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "XC9236A33DMR-G"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-09-02-04:11:06)
+    (mountForm default
+        (footprintRef "SOT95P280X130-5N")
+        (spec "System")
+    )
+)

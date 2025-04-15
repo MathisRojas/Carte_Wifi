@@ -1,0 +1,70 @@
+(Japanese_coding: sjis)
+(function "ECS_901823"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2022-09-15-04:34:39)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "3" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "2SCR514RTL")
+)
+
+
+(pinAssign "ECS_901823"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2022-09-15-04:34:39)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portName "B") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "E") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "C") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_901823")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "2SCR514RTL")
+)
+
+
+(part "2SCR514RTL"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2022-09-15-04:34:39)
+    (utime 2023-03-07-16:10:32)
+    (packageRef "2SCR514RTL")
+    (pinAssignRef "ECS_901823")
+    (interface
+        (port "1" (symbPinId 1) (portName "B") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "E") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "C") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "Q")
+    (property "description" "NPN, SOT-346T, 80V 0.7A, Driver Transistor")
+    (property "Mouser_Part_Number" "755-2SCR514RTL")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/2SCR514RTL?qs=%2FKR40Cd6GUphgPCgvqkTFQ%3D%3D")
+    (property "Manufacturer_Name" "ROHM Semiconductor")
+    (property "Manufacturer_Part_Number" "2SCR514RTL")
+    (property "Datasheet_Link" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/bipolar/2scr514rtl-e.pdf")
+    (property "compAreaTopHeight" 1)
+)
+
+

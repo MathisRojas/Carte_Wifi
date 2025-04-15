@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PIC18F26K22-I_SS
+D MCU, 64KB, 3968b-RAM, Flash,nanoWatt XLP
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-DGA18/353826.pdf
+$ENDCMP
+#
+#End Doc Library

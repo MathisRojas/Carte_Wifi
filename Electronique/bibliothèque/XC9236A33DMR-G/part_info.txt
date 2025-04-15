@@ -1,0 +1,9 @@
+Manufacturer=Torex
+PartNumber=XC9236A33DMR-G
+PartCategory=Integrated Circuit
+PackageCategory=SOT23 (5-Pin)
+PinCount=5
+Version=1.1
+Released=2022-08-24 03:04:35
+Downloaded=2024-11-25 10:14:26
+3D=Y

@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "2SCR514RTL"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "2SCR514RTL")
+        (spec "default")
+    )
+)

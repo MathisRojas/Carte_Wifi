@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/255281/1545415/2.50/7/3/Hygrometer/-->
+<quadcept_library>
+  <setting unit="mil" />
+  <textstyle name="Default" height="47.244094488189" strokewidth="7.8740157480315" charwidth="47.244094488189" />
+  <textstyle name="Dimension" height="19.6850393700787" strokewidth="0" charwidth="19.6850393700787" />
+  <textstyle name="H127W0635TH00762" height="50" strokewidth="3" charwidth="25" />
+  <textstyle name="H15W15TH02" height="59.0551181102362" strokewidth="7.8740157480315" charwidth="59.0551181102362" />
+  <padstyle name="r85_45" surface="True" plated="False" isvia="False" nopaste="False" nomask="True" complex="False" holesize="0">
+    <padshape layer="TOP" shape="rectangle" width="17.716535433071" height="33.464566929133" />
+    <padshape layer="TOP_SOLDER_PASTE" shape="rectangle" width="17.716535433071" height="33.464566929133" />
+    <padshape layer="TOP_SOLDER_MASK" shape="rectangle" width="25.590551181102" height="41.338582677165" />
+  </padstyle>
+  <padstyle name="r240_150" surface="True" plated="False" isvia="False" nopaste="False" nomask="True" complex="False" holesize="0">
+    <padshape layer="TOP" shape="rectangle" width="59.055118110235" height="94.488188976377" />
+    <padshape layer="TOP_SOLDER_MASK" shape="rectangle" width="66.929133858267" height="102.36220472441" />
+    <padshape layer="TOP_SOLDER_PASTE" shape="rectangle" width="59.055118110235" height="94.488188976377" />
+  </padstyle>
+  <footprint name="SON100P300X300X110-7N" originx="0" originy="0" pickpointx="0" pickpointy="0">
+    <pcbpin number="1" name="1" style="r85_45" originx="-57.086614173228" originy="39.370078740157" rotation="90" />
+    <pcbpin number="2" name="2" style="r85_45" originx="-57.086614173228" originy="0" rotation="90" />
+    <pcbpin number="3" name="3" style="r85_45" originx="-57.086614173228" originy="-39.370078740157" rotation="90" />
+    <pcbpin number="4" name="4" style="r85_45" originx="57.086614173228" originy="-39.370078740157" rotation="90" />
+    <pcbpin number="5" name="5" style="r85_45" originx="57.086614173228" originy="0" rotation="90" />
+    <pcbpin number="6" name="6" style="r85_45" originx="57.086614173228" originy="39.370078740157" rotation="90" />
+    <pcbpin number="7" name="7" style="r240_150" originx="0" originy="0" rotation="0" />
+    <line layer="TOP_PLACE_BOUND" originx="-83.661417322834" originy="68.897637795275" endx="83.661417322834" endy="68.897637795275" width="1.9685039370079" />
+    <line layer="TOP_PLACE_BOUND" originx="83.661417322834" originy="68.897637795275" endx="83.661417322834" endy="-68.897637795275" width="1.9685039370079" />
+    <line layer="TOP_PLACE_BOUND" originx="83.661417322834" originy="-68.897637795275" endx="-83.661417322834" endy="-68.897637795275" width="1.9685039370079" />
+    <line layer="TOP_PLACE_BOUND" originx="-83.661417322834" originy="-68.897637795275" endx="-83.661417322834" endy="68.897637795275" width="1.9685039370079" />
+    <line layer="TOP_ASSEMBLY" originx="-59.055118110235" originy="59.055118110235" endx="59.055118110235" endy="59.055118110235" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="59.055118110235" originy="59.055118110235" endx="59.055118110235" endy="-59.055118110235" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="59.055118110235" originy="-59.055118110235" endx="-59.055118110235" endy="-59.055118110235" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="-59.055118110235" originy="-59.055118110235" endx="-59.055118110235" endy="59.055118110235" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="-59.055118110235" originy="29.527559055118" endx="-29.527559055118" endy="59.055118110235" width="3.9370078740157" />
+    <arc layer="TOP_SILKSCREEN" originx="-73.818897637794" originy="67.913385826771" startangle="180" sweepangle="180" radius="4.9212598425196" width="9.8425196850392" />
+    <arc layer="TOP_SILKSCREEN" originx="-73.818897637794" originy="67.913385826771" startangle="180" sweepangle="-180" radius="4.9212598425196" width="9.8425196850392" />
+  </footprint>
+  <symbol name="SHT21" originx="0" originy="0">
+    <line originx="200" originy="100" endx="1000" endy="100" width="0" />
+    <line originx="1000" originy="-500" endx="1000" endy="100" width="0" />
+    <line originx="1000" originy="-500" endx="200" endy="-500" width="0" />
+    <line originx="200" originy="100" endx="200" endy="-500" width="0" />
+    <sympin number="1" originx="200" originy="0" rotation="180" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="230" originy="0" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="SDA" />
+      <text name="pindes" originx="140" originy="20" style="Default" rotation="0" justify="lowerright" flipped="False" hidden="False" data="1" />
+    </sympin>
+    <sympin number="2" originx="200" originy="-100" rotation="180" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="230" originy="-100" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="VSS" />
+      <text name="pindes" originx="140" originy="-80" style="Default" rotation="0" justify="lowerright" flipped="False" hidden="False" data="2" />
+    </sympin>
+    <sympin number="3" originx="200" originy="-200" rotation="180" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="230" originy="-200" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="NC_1" />
+      <text name="pindes" originx="140" originy="-180" style="Default" rotation="0" justify="lowerright" flipped="False" hidden="False" data="3" />
+    </sympin>
+    <sympin number="7" originx="600" originy="-500" rotation="270" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="600" originy="-470" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="EP" />
+      <text name="pindes" originx="580" originy="-560" style="Default" rotation="0" justify="lowerright" flipped="False" hidden="False" data="7" />
+    </sympin>
+    <sympin number="6" originx="1000" originy="0" rotation="0" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="970" originy="0" style="Default" rotation="0" justify="right" flipped="False" hidden="False" data="SCL" />
+      <text name="pindes" originx="1060" originy="20" style="Default" rotation="0" justify="lowerleft" flipped="False" hidden="False" data="6" />
+    </sympin>
+    <sympin number="5" originx="1000" originy="-100" rotation="0" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="970" originy="-100" style="Default" rotation="0" justify="right" flipped="False" hidden="False" data="VDD" />
+      <text name="pindes" originx="1060" originy="-80" style="Default" rotation="0" justify="lowerleft" flipped="False" hidden="False" data="5" />
+    </sympin>
+    <sympin number="4" originx="1000" originy="-200" rotation="0" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="970" originy="-200" style="Default" rotation="0" justify="right" flipped="False" hidden="False" data="NC_2" />
+      <text name="pindes" originx="1060" originy="-180" style="Default" rotation="0" justify="lowerleft" flipped="False" hidden="False" data="4" />
+    </sympin>
+  </symbol>
+  <component name="SHT21" designatorprefix="HM" height="43.307086614173" footprint="SON100P300X300X110-7N">
+    <comppin designator="1" sympin="1" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="SDA" />
+    <comppin designator="2" sympin="2" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="VSS" />
+    <comppin designator="3" sympin="3" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="NC_1" />
+    <comppin designator="4" sympin="4" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="NC_2" />
+    <comppin designator="5" sympin="5" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="VDD" />
+    <comppin designator="6" sympin="6" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="SCL" />
+    <comppin designator="7" sympin="7" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="EP" />
+    <attached_symbol gate="1" name="SHT21" />
+    <pinmap designator="1" footprintpin="1" />
+    <pinmap designator="2" footprintpin="2" />
+    <pinmap designator="3" footprintpin="3" />
+    <pinmap designator="4" footprintpin="4" />
+    <pinmap designator="5" footprintpin="5" />
+    <pinmap designator="6" footprintpin="6" />
+    <pinmap designator="7" footprintpin="7" />
+    <text name="Datasheet" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="https://datasheet.datasheetarchive.com/originals/distributors/DKDS-37/728928.pdf" />
+    <text name="Description" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="Sensor Humidity &amp; Temp 2%RH I2C DFN6 SHT21, 8" />
+    <text name="Mouser Part Number" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="403-SHT21" />
+    <text name="Mouser Price/Stock" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="https://www.mouser.co.uk/ProductDetail/Sensirion/SHT21?qs=wWC4CIiyLaNbiIJO6bf9AA%3D%3D" />
+    <text name="Manufacturer_Name" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="Sensirion" />
+    <text name="Manufacturer_Part_Number" originx="1050" originy="200" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="SHT21" />
+  </component>
+</quadcept_library>

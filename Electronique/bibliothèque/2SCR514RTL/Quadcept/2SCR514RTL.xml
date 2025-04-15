@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/901823/1545415/2.50/3/2/Transistor BJT NPN/-->
+<quadcept_library>
+  <setting unit="mil" />
+  <textstyle name="Default" height="47.244094488189" strokewidth="7.8740157480315" charwidth="47.244094488189" />
+  <textstyle name="Dimension" height="19.6850393700787" strokewidth="0" charwidth="19.6850393700787" />
+  <textstyle name="H127W0635TH00762" height="50" strokewidth="3" charwidth="25" />
+  <textstyle name="H15W15TH02" height="59.0551181102362" strokewidth="7.8740157480315" charwidth="59.0551181102362" />
+  <padstyle name="r90_70" surface="True" plated="False" isvia="False" nopaste="False" nomask="True" complex="False" holesize="0">
+    <padshape layer="TOP" shape="rectangle" width="27.55905511811" height="35.433070866141" />
+    <padshape layer="TOP_SOLDER_MASK" shape="rectangle" width="35.433070866141" height="43.307086614173" />
+    <padshape layer="TOP_SOLDER_PASTE" shape="rectangle" width="27.55905511811" height="35.433070866141" />
+  </padstyle>
+  <footprint name="2SCR514RTL" originx="0" originy="0" pickpointx="0" pickpointy="0">
+    <pcbpin number="1" name="1" style="r90_70" originx="-37.401574803149" originy="-41.338582677165" rotation="0" />
+    <pcbpin number="2" name="2" style="r90_70" originx="37.401574803149" originy="-41.338582677165" rotation="0" />
+    <pcbpin number="3" name="3" style="r90_70" originx="0" originy="41.338582677165" rotation="0" />
+    <line layer="TOP_ASSEMBLY" originx="-57.086614173228" originy="-32.48031496063" endx="57.086614173228" endy="-32.48031496063" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="57.086614173228" originy="-32.48031496063" endx="57.086614173228" endy="32.48031496063" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="57.086614173228" originy="32.48031496063" endx="-57.086614173228" endy="32.48031496063" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="-57.086614173228" originy="32.48031496063" endx="-57.086614173228" endy="-32.48031496063" width="3.9370078740157" />
+    <line layer="TOP_PLACE_BOUND" originx="-96.456692913385" originy="98.425196850392" endx="96.456692913385" endy="98.425196850392" width="3.9370078740157" />
+    <line layer="TOP_PLACE_BOUND" originx="96.456692913385" originy="98.425196850392" endx="96.456692913385" endy="-98.425196850392" width="3.9370078740157" />
+    <line layer="TOP_PLACE_BOUND" originx="96.456692913385" originy="-98.425196850392" endx="-96.456692913385" endy="-98.425196850392" width="3.9370078740157" />
+    <line layer="TOP_PLACE_BOUND" originx="-96.456692913385" originy="-98.425196850392" endx="-96.456692913385" endy="98.425196850392" width="3.9370078740157" />
+    <line layer="TOP_SILKSCREEN" originx="-31.496062992126" originy="31.496062992126" endx="-55.11811023622" endy="31.496062992126" width="7.8740157480314" />
+    <line layer="TOP_SILKSCREEN" originx="-55.11811023622" originy="31.496062992126" endx="-57.086614173228" endy="31.496062992126" width="7.8740157480314" />
+    <line layer="TOP_SILKSCREEN" originx="-57.086614173228" originy="31.496062992126" endx="-57.086614173228" endy="-15.748031496063" width="7.8740157480314" />
+    <line layer="TOP_SILKSCREEN" originx="31.496062992126" originy="32.48031496063" endx="57.086614173228" endy="32.48031496063" width="7.8740157480314" />
+    <line layer="TOP_SILKSCREEN" originx="57.086614173228" originy="32.48031496063" endx="57.086614173228" endy="-15.748031496063" width="7.8740157480314" />
+    <line layer="TOP_SILKSCREEN" originx="-7.8740157480314" originy="-32.48031496063" endx="7.8740157480314" endy="-32.48031496063" width="7.8740157480314" />
+    <line layer="TOP_SILKSCREEN" originx="-37.401574803149" originy="-82.67716535433" endx="-37.401574803149" endy="-82.67716535433" width="3.9370078740157" />
+    <arc layer="TOP_SILKSCREEN" originx="-37.401574803149" originy="-80.708661417322" startangle="-90.0" sweepangle="180.0" radius="1.9685039370079" width="3.9370078740157" />
+    <line layer="TOP_SILKSCREEN" originx="-37.401574803149" originy="-78.740157480314" endx="-37.401574803149" endy="-78.740157480314" width="3.9370078740157" />
+    <arc layer="TOP_SILKSCREEN" originx="-37.401574803149" originy="-80.708661417322" startangle="90.0" sweepangle="180.0" radius="1.9685039370079" width="3.9370078740157" />
+  </footprint>
+  <symbol name="2SCR514RTL" originx="0" originy="0">
+    <line originx="300" originy="100" endx="300" endy="-100" width="0" />
+    <line originx="300" originy="50" endx="400" endy="150" width="0" />
+    <line originx="300" originy="-50" endx="400" endy="-150" width="0" />
+    <line originx="400" originy="-150" endx="400" endy="-200" width="0" />
+    <line originx="400" originy="150" endx="400" endy="200" width="0" />
+    <line originx="100" originy="0" endx="300" endy="0" width="0" />
+    <arc originx="350" originy="0" startangle="180" sweepangle="180" radius="158.114" width="0" />
+    <arc originx="350" originy="0" startangle="180" sweepangle="-180" radius="158.114" width="0" />
+    <sympin number="1" originx="100" originy="0" rotation="180" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="0" originy="-20" style="Default" rotation="0" justify="upperleft" flipped="False" hidden="True" data="B" />
+      <text name="pindes" originx="0" originy="20" style="Default" rotation="0" justify="lowerleft" flipped="False" hidden="False" data="1" />
+    </sympin>
+    <sympin number="2" originx="400" originy="-200" rotation="270" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="420" originy="-300" style="Default" rotation="90" justify="lowerleft" flipped="False" hidden="True" data="E" />
+      <text name="pindes" originx="380" originy="-300" style="Default" rotation="90" justify="lowerright" flipped="False" hidden="False" data="2" />
+    </sympin>
+    <sympin number="3" originx="400" originy="200" rotation="90" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="420" originy="300" style="Default" rotation="90" justify="upperleft" flipped="False" hidden="True" data="C" />
+      <text name="pindes" originx="380" originy="300" style="Default" rotation="90" justify="upperright" flipped="False" hidden="False" data="3" />
+    </sympin>
+    <polygon type="polygon">
+      <point x="330" y="-100" />
+      <point x="350" y="-80" />
+      <point x="370" y="-120" />
+    </polygon>
+  </symbol>
+  <component name="2SCR514RTL" designatorprefix="Q" height="39.370078740157" footprint="2SCR514RTL">
+    <comppin designator="1" sympin="1" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="B" />
+    <comppin designator="2" sympin="2" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="E" />
+    <comppin designator="3" sympin="3" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="C" />
+    <attached_symbol gate="1" name="2SCR514RTL" />
+    <pinmap designator="1" footprintpin="1" />
+    <pinmap designator="2" footprintpin="2" />
+    <pinmap designator="3" footprintpin="3" />
+    <text name="Datasheet" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/bipolar/2scr514rtl-e.pdf" />
+    <text name="Description" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="NPN, SOT-346T, 80V 0.7A, Driver Transistor" />
+    <text name="Mouser Part Number" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="755-2SCR514RTL" />
+    <text name="Mouser Price/Stock" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/2SCR514RTL?qs=%2FKR40Cd6GUphgPCgvqkTFQ%3D%3D" />
+    <text name="Manufacturer_Name" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="ROHM Semiconductor" />
+    <text name="Manufacturer_Part_Number" originx="550" originy="-50" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="2SCR514RTL" />
+  </component>
+</quadcept_library>

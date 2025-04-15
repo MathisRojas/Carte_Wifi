@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'G5RL_U1_E_DC3'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "Omron Electronics", "G5RL-U1-E-DC3" (!) = "", "G5RLU1E", "Other", "653-G5RLU1EDC3", "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G5RL-U1-E-DC3?qs=9CM3gX%252B2VGH2i8p8HDDMCw%3D%3D", "General Purpose Relays 16A hi swtch curent latching relay", "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5rl_uk.pdf"
+END_PART
+
+END.

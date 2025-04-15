@@ -1,0 +1,9 @@
+Manufacturer=Sensirion
+PartNumber=SHT21
+PartCategory=Hygrometer
+PackageCategory=Small Outline No-lead
+PinCount=7
+Version=4.1
+Released=2021-01-31 08:13:58
+Downloaded=2024-11-25 10:13:28
+3D=Y

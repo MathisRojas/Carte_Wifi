@@ -1,0 +1,9 @@
+Manufacturer=ROHM Semiconductor
+PartNumber=2SCR514RTL
+PartCategory=Transistor BJT NPN
+PackageCategory=Other
+PinCount=3
+Version=3.1
+Released=2022-09-15 04:34:39
+Downloaded=2024-12-05 22:49:38
+3D=Y

@@ -1,0 +1,9 @@
+Manufacturer=TAIYO YUDEN
+PartNumber=NR3015T1R5N
+PartCategory=Inductor
+PackageCategory=Other
+PinCount=2
+Version=1.2
+Released=2018-07-29 16:08:49
+Downloaded=2024-11-25 10:15:14
+3D=N

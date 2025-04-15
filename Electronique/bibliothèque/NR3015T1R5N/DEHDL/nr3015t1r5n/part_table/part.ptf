@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'NR3015T1R5N'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "TAIYO YUDEN", "NR3015T1R5N" (!) = "", "NR3015", "Other", "963-NR3015T1R5N", "https://www.mouser.co.uk/ProductDetail/TAIYO-YUDEN/NR3015T1R5N?qs=PzICbMaShUe%252BYogdNjEJcQ%3D%3D", "TAIYO YUDEN - NR3015T1R5N - INDUCTOR, SHIELDED, 1.5UH, 1.8A, SMD", "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-DGA11/2187054.pdf"
+END_PART
+
+END.

@@ -1,0 +1,9 @@
+Manufacturer=Omron Electronics
+PartNumber=G5RL-U1-E-DC3
+PartCategory=Relay or Contactor
+PackageCategory=Other
+PinCount=8
+Version=1.1
+Released=2018-12-06 01:08:51
+Downloaded=2024-11-25 10:12:39
+3D=N

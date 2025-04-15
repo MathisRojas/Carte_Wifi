@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'SHT21'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Sensirion", "SHT21" (!) = "", "SON100P300X300X110-7N-D", "Small Outline No-lead", "403-SHT21", "https://www.mouser.co.uk/ProductDetail/Sensirion/SHT21?qs=wWC4CIiyLaNbiIJO6bf9AA%3D%3D", "Sensor Humidity & Temp 2%RH I2C DFN6 SHT21, 8", "https://datasheet.datasheetarchive.com/originals/distributors/DKDS-37/728928.pdf", "1.1 mm"
+END_PART
+
+END.

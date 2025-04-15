@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "NR3015"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "NR3015")
+        (spec "default")
+    )
+)

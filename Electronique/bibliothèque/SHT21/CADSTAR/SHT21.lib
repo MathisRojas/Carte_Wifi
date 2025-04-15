@@ -1,0 +1,16 @@
+.SHT21 :1 ;Sensor Humidity & Temp 2%RH I2C DFN6 SHT21, 8
+SON100P300X300X110-7N-D
+*STM HM
+*NGS
+*PLB 1="SDA" 2="VSS" 3="NC_1" 4="NC_2" 5="VDD" 6="SCL" 7="EP"
+*MXP 7
+*DFN SHT21
+~!Mouser Part Number (403-SHT21)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Sensirion/SHT21?qs=wWC4CIiyLaNbiIJO6bf9AA%3D%3D)
+~!Manufacturer_Name (Sensirion)
+~!Manufacturer_Part_Number (SHT21)
+~!Link Datasheet (https://datasheet.datasheetarchive.com/originals/distributors/DKDS-37/728928.pdf)
+~!Height (1.1mm)
+~!3D_Model (SHT21)
+SHT21
+1.1!U 2.1!U 3.1!U 7.1!U 6.1!U 5.1!U 4.1!U 
